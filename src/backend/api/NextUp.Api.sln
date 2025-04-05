@@ -3,6 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Domain", "01_Domain", "{91252D47-2102-43FC-98B3-544E7AC6464B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Application", "02_Application", "{EF74766B-A3CF-477F-8240-7A9CDC8E8969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Infrastructure", "04_Infrastructure", "{D80DE416-6ABB-487E-859B-8824C980F409}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Api", "03_Api", "{E036B327-3C19-4A67-8175-2FF1597274EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextUp.Domain.Games", "Domain\NextUp.Domain.Games\NextUp.Domain.Games.csproj", "{E69C71D2-215C-4A07-AA67-CD19CEE7925A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextUp.Domain.Releases", "Domain\NextUp.Domain.Releases\NextUp.Domain.Releases.csproj", "{23447E22-0D9C-41A3-93A4-00883B44BE15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +22,19 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E69C71D2-215C-4A07-AA67-CD19CEE7925A} = {91252D47-2102-43FC-98B3-544E7AC6464B}
+		{23447E22-0D9C-41A3-93A4-00883B44BE15} = {91252D47-2102-43FC-98B3-544E7AC6464B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E69C71D2-215C-4A07-AA67-CD19CEE7925A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69C71D2-215C-4A07-AA67-CD19CEE7925A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69C71D2-215C-4A07-AA67-CD19CEE7925A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69C71D2-215C-4A07-AA67-CD19CEE7925A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23447E22-0D9C-41A3-93A4-00883B44BE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23447E22-0D9C-41A3-93A4-00883B44BE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23447E22-0D9C-41A3-93A4-00883B44BE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23447E22-0D9C-41A3-93A4-00883B44BE15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
