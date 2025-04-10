@@ -14,6 +14,7 @@ public sealed class Release
         ReleaseType type,
         ReleaseStatus status,
         Game game,
+        IEnumerable<GamePlatform> platforms,
         IEnumerable<ReleaseArticle> articles)
     {
         Guard.Against.NullOrWhiteSpace(title);
@@ -33,6 +34,10 @@ public sealed class Release
 
         Guard.Against.Null(game);
         Game = game;
+
+        var releasePlatforms = platforms.ToArray();
+        Guard.Against.NullOrEmpty(releasePlatforms);
+        Platforms = releasePlatforms;
 
         var releaseArticles = articles.ToArray();
         Guard.Against.NullOrEmpty(releaseArticles);
@@ -63,6 +68,11 @@ public sealed class Release
     ///     The associated game.
     /// </summary>
     public Game Game { get; }
+
+    /// <summary>
+    ///     The platforms the release is for.
+    /// </summary>
+    public IReadOnlyCollection<GamePlatform> Platforms { get; }
 
     /// <summary>
     ///     Articles associated with the release.
