@@ -1,6 +1,6 @@
 ﻿using Ardalis.GuardClauses;
 
-namespace NextUp.Domain.Releases;
+namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     The year and quarter of a release have been given.

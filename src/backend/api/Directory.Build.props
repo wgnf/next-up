@@ -11,7 +11,7 @@
     <Nullable>enable</Nullable>
 
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup>

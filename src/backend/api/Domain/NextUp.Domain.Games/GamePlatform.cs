@@ -4,8 +4,8 @@ namespace NextUp.Domain.Games;
 
 /// <summary>
 ///     The platform a game can be published on.
-///     I.e. "Playstation 5", "Xbox Series X", "Switch 2", "Steam", "Epic Games", ...
 /// </summary>
+/// <example>Playstation 5, Xbox Series X, Switch 2, Steam, Epic Games, ...</example>
 public sealed class GamePlatform
 {
     public GamePlatform(string name)

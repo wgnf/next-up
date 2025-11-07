@@ -1,5 +1,6 @@
 ﻿using Ardalis.GuardClauses;
 using NextUp.Domain.Games;
+using NextUp.Domain.Releases.ReleaseDate;
 
 namespace NextUp.Domain.Releases;
 
@@ -10,7 +11,7 @@ public sealed class Release
 {
     public Release(
         string title,
-        ReleaseDate date,
+        IReleaseDate releaseDate,
         ReleaseType type,
         ReleaseStatus status,
         Game game,
@@ -21,8 +22,8 @@ public sealed class Release
         Guard.Against.LengthOutOfRange(title, 5, 50);
         Title = title;
 
-        Guard.Against.Null(date);
-        Date = date;
+        Guard.Against.Null(releaseDate);
+        ReleaseDate = releaseDate;
 
         Guard.Against.Null(type);
         Guard.Against.EnumOutOfRange(type);
@@ -52,7 +53,7 @@ public sealed class Release
     /// <summary>
     ///     The release date.
     /// </summary>
-    public ReleaseDate Date { get; }
+    public IReleaseDate ReleaseDate { get; }
 
     /// <summary>
     ///     The type.

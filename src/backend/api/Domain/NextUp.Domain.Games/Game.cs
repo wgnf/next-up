@@ -4,8 +4,8 @@ namespace NextUp.Domain.Games;
 
 /// <summary>
 ///     A game.
-///     I.e. Grand Theft Auto VI, Kingdom Come: Deliverance II, ...
 /// </summary>
+/// <example>Grand Theft Auto VI, Kingdom Come: Deliverance II, ...</example>
 public sealed class Game
 {
     public Game(

@@ -4,8 +4,8 @@ namespace NextUp.Domain.Games;
 
 /// <summary>
 ///     The studio that developed a game.
-///     I.e. Rockstar, Warhorse Studios, ...
 /// </summary>
+/// <example>Rockstar, Warhorse Studios, ...</example>
 public sealed class GameDeveloper
 {
     public GameDeveloper(string name)

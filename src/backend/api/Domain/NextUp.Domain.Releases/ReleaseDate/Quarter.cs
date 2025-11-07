@@ -1,4 +1,4 @@
-﻿namespace NextUp.Domain.Releases;
+﻿namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     The possible quarters of a year.

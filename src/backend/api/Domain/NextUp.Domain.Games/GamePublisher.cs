@@ -4,8 +4,8 @@ namespace NextUp.Domain.Games;
 
 /// <summary>
 ///     The company that published a game.
-///     I.e. Rockstar, Sony Entertainment, ...
 /// </summary>
+/// <example>Rockstar, Sony Entertainment</example>
 public sealed class GamePublisher
 {
     public GamePublisher(string name)

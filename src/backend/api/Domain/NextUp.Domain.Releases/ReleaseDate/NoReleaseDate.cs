@@ -1,12 +1,12 @@
-﻿namespace NextUp.Domain.Releases;
+﻿namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     A release that has no date yet. To be announced.
 /// </summary>
-public sealed class NoReleaseDate : ReleaseDate
+public sealed class NoReleaseDate : IReleaseDate
 {
     /// <inheritdoc />
-    protected override DateTimeOffset? GetDisplayDate()
+    public DateTimeOffset? GetDisplayDate()
     {
         return null;
     }

@@ -1,11 +1,11 @@
 ﻿using Ardalis.GuardClauses;
 
-namespace NextUp.Domain.Releases;
+namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     The exact release date has been announced.
 /// </summary>
-public sealed class ExactReleaseDate : ReleaseDate
+public sealed class ExactReleaseDate : IReleaseDate
 {
     private readonly DateTimeOffset _exactReleaseDate;
 
@@ -16,7 +16,7 @@ public sealed class ExactReleaseDate : ReleaseDate
     }
 
     /// <inheritdoc />
-    protected override DateTimeOffset? GetDisplayDate()
+    public DateTimeOffset? GetDisplayDate()
     {
         return _exactReleaseDate;
     }
