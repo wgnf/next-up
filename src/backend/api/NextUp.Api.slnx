@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/.build/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/01_Domain/">
+    <Project Path="Domain/NextUp.Domain.Games/NextUp.Domain.Games.csproj" />
+    <Project Path="Domain/NextUp.Domain.Releases/NextUp.Domain.Releases.csproj" />
+  </Folder>
+  <Folder Name="/02_Application/">
+    <Project Path="Application/NextUp.Application.Games/NextUp.Application.Games.csproj" />
+    <Project Path="Application/NextUp.Application.Releases/NextUp.Application.Releases.csproj" />
+    <Project Path="Application/NextUp.Application/NextUp.Application.csproj" />
+  </Folder>
+  <Folder Name="/03_Api/">
+    <Project Path="Api/NextUp.Api.Games/NextUp.Api.Games.csproj" />
+    <Project Path="Api/NextUp.Api.Releases/NextUp.Api.Releases.csproj" />
+    <Project Path="Api/NextUp.Api/NextUp.Api.csproj" />
+  </Folder>
+  <Folder Name="/04_Infrastructure/" />
+</Solution>
