@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 
     <PublishAot>true</PublishAot>
     <PublishTrimmed>true</PublishTrimmed>
@@ -17,5 +17,7 @@
   <PropertyGroup>
     <Authors>Martin Wagenführ</Authors>
     <Description>Track upcoming game releases</Description>
+
+    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 </Project>

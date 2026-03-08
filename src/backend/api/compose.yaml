@@ -1,0 +1,7 @@
+﻿services:
+  nextup.api:
+    image: nextup.api
+    build:
+      context: .
+      dockerfile: Api/NextUp.Api/Dockerfile
+
