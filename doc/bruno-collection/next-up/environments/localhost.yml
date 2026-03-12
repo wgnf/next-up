@@ -1,0 +1,10 @@
+name: localhost
+variables:
+  - name: BaseAddress
+    value: http://localhost:5062
+  - name: ApiEndpoint
+    value: "{{BaseAddress}}/api"
+  - name: GamesEndpoint
+    value: "{{ApiEndpoint}}/games"
+  - name: DevelopersEndpoint
+    value: "{{GamesEndpoint}}/developers"
