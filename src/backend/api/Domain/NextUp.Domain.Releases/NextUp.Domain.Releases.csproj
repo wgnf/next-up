@@ -3,6 +3,7 @@
     <PackageReference Include="Ardalis.GuardClauses" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Commons\NextUp.Api.Commons\NextUp.Api.Commons.csproj" />
     <ProjectReference Include="..\NextUp.Domain.Games\NextUp.Domain.Games.csproj" />
   </ItemGroup>
 </Project>

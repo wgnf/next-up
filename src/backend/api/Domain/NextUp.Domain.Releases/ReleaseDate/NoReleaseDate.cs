@@ -1,4 +1,6 @@
-﻿namespace NextUp.Domain.Releases.ReleaseDate;
+﻿using NextUp.Api.Commons.Functional;
+
+namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     A release that has no date yet. To be announced.
@@ -6,8 +8,8 @@
 public sealed class NoReleaseDate : IReleaseDate
 {
     /// <inheritdoc />
-    public DateTimeOffset? GetDisplayDate()
+    public Optional<DateTimeOffset> GetDisplayDate()
     {
-        return null;
+        return Optional<DateTimeOffset>.None();
     }
 }

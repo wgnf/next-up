@@ -1,4 +1,5 @@
 ﻿using Ardalis.GuardClauses;
+using NextUp.Api.Commons.Functional;
 
 namespace NextUp.Domain.Releases.ReleaseDate;
 
@@ -16,8 +17,8 @@ public sealed class ExactReleaseDate : IReleaseDate
     }
 
     /// <inheritdoc />
-    public DateTimeOffset? GetDisplayDate()
+    public Optional<DateTimeOffset> GetDisplayDate()
     {
-        return _exactReleaseDate;
+        return Optional.Of(_exactReleaseDate);
     }
 }

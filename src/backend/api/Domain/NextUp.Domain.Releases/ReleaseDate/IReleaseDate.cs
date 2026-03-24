@@ -1,4 +1,6 @@
-﻿namespace NextUp.Domain.Releases.ReleaseDate;
+﻿using NextUp.Api.Commons.Functional;
+
+namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     The date of a release.
@@ -9,5 +11,5 @@ public interface IReleaseDate
     ///     The date that should be displayed. Can be inaccurate depending on the data provided.
     /// </summary>
     /// <returns>The date that should be displayed. Can be null.</returns>
-    protected abstract DateTimeOffset? GetDisplayDate();
+    protected abstract Optional<DateTimeOffset> GetDisplayDate();
 }

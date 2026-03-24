@@ -1,4 +1,6 @@
-﻿namespace NextUp.Domain.Releases.ReleaseDate;
+﻿using NextUp.Api.Commons.Functional;
+
+namespace NextUp.Domain.Releases.ReleaseDate;
 
 /// <summary>
 ///     An approximate release date was announced, such as "in year 2025" or "in quarter 4 of 2026".
@@ -12,8 +14,8 @@ public abstract class ApproximateReleaseDate : IReleaseDate
     protected abstract DateTimeOffset GetApproximateReleaseDate();
 
     /// <inheritdoc />
-    public DateTimeOffset? GetDisplayDate()
+    public Optional<DateTimeOffset> GetDisplayDate()
     {
-        return GetApproximateReleaseDate();
+        return Optional.Of(GetApproximateReleaseDate());
     }
 }

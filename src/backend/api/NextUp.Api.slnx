@@ -4,6 +4,9 @@
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
   </Folder>
+  <Folder Name="/00_Commons/">
+    <Project Path="Commons/NextUp.Api.Commons/NextUp.Api.Commons.csproj" />
+  </Folder>
   <Folder Name="/01_Domain/">
     <Project Path="Domain/NextUp.Domain.Games/NextUp.Domain.Games.csproj" />
     <Project Path="Domain/NextUp.Domain.Releases/NextUp.Domain.Releases.csproj" />
@@ -19,7 +22,4 @@
     <Project Path="Api/NextUp.Api/NextUp.Api.csproj" />
   </Folder>
   <Folder Name="/04_Infrastructure/" />
-  <Folder Name="/99_Commons/">
-    <Project Path="Commons/NextUp.Api.Commons/NextUp.Api.Commons.csproj" />
-  </Folder>
 </Solution>
