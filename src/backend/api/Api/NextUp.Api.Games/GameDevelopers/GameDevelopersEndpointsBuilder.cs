@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using NextUp.Application.Abstractions;
+using NextUp.Domain.Games;
 
 namespace NextUp.Api.Games.GameDevelopers;
 
@@ -8,21 +10,13 @@ internal static class GameDevelopersEndpointsBuilder
 {
     public static IEndpointRouteBuilder MapGameDevelopersEndpoints(this IEndpointRouteBuilder builder)
     {
-        var developersGroup = builder.MapGroup("/developers");
-        
+        var developersGroup = builder.MapGroup("/devs");
+
         developersGroup
-            .MapGet("/", GetDevelopers)
-            .Produces<GameDev[]>(StatusCodes.Status200OK)
+            .MapGet("/", async (ICrudService<GameDeveloper> service) => await service.GetAllAsync())
+            .Produces<GameDeveloper[]>()
             .Produces(StatusCodes.Status400BadRequest);
-        
+
         return builder;
     }
-
-    private static GameDev[] GetDevelopers()
-    {
-        var devs = new[] { new GameDev("Hello"), new GameDev("World") };
-        return devs;
-    }
 }
-
-public record GameDev(string Name);

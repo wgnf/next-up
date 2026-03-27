@@ -63,12 +63,13 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 # modifier preferences
-dotnet_style_require_accessibility_modifiers = always:error
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:error
 dotnet_style_readonly_field = true:error
 
 # expression level preferences
 dotnet_style_object_initializer = true:warning
 dotnet_style_collection_initializer = true:warning
+dotnet_style_prefer_collection_expression = true:warning
 dotnet_style_explicit_tuple_names = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_coalesce_expression = true:warning
@@ -178,7 +179,7 @@ csharp_space_between_empty_square_brackets = false
 csharp_space_between_square_brackets = false
 
 # wrapping preferences
-csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
 # naming rules

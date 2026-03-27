@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using NextUp.Api.Games.GameDevelopers;
+using NextUp.Domain.Games;
 
 namespace NextUp.Api.Games;
 
-[JsonSerializable(typeof(GameDev[]))]
+[JsonSerializable(typeof(IEnumerable<GameDeveloper>))]
 public partial class GamesJsonContext : JsonSerializerContext;

@@ -7,4 +7,4 @@ variables:
   - name: GamesEndpoint
     value: "{{ApiEndpoint}}/games"
   - name: DevelopersEndpoint
-    value: "{{GamesEndpoint}}/developers"
+    value: "{{GamesEndpoint}}/devs"

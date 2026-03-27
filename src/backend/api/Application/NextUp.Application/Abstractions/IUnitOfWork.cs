@@ -13,6 +13,5 @@
 
 public interface IUnitOfWork
 {
-    // TODO: why do I need to make this public explicitly? Check Rider Configuration or .editorconfig!
-    public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+    Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

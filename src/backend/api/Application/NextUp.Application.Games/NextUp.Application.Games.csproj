@@ -1,2 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\NextUp.Domain.Games\NextUp.Domain.Games.csproj"/>
+    <ProjectReference Include="..\NextUp.Application\NextUp.Application.csproj"/>
+  </ItemGroup>
 </Project>
